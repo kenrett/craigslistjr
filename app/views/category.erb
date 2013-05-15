@@ -1,0 +1,5 @@
+<ul>
+<% Category.all.each do |cat| %>
+<li> <a href=<%= "/category/#{cat.id}" %>><%= cat.category %></a> </li>
+<% end %>
+</ul>

@@ -1,0 +1,6 @@
+<form action="/posted" method="post" >
+  <textarea type="text" name="text" ><%= @editable[:text] %></textarea><br>
+  <input type="text" name="category" value=<%= @cat.category  %>  >
+  <input type="hidden" name="url" value=<%= @editable[:url] %>>
+  <input type="submit" name="Submit">
+</form>

@@ -1,0 +1,9 @@
+<%= "You're page can be edited at #{@params[:url]}" %>
+
+<div>
+  <p><a href="/">Go back to index</a></p>
+  <p><a href="/post/new">Create new post</a></p>
+ <p><a href=<%= "mailto:someone@example.com?Subject=Your%20post%20link&Body=You%20can%20edit%20your%20post%20at%20this%20address%20http%3A%2F%2F0.0.0.0%3A9292%2Fedit_post%3Aurl%3D#{@params[:url]}" %> >Mail me the link</a></p>
+
+</div>
+

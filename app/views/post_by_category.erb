@@ -1,0 +1,5 @@
+<ul>
+<% Post.where(category_id: @cat_id).each do |post| %>
+<li> <a href=<%= "/post/#{post.id}" %>><%= post.text %> </a></li>
+<% end %>
+</ul>
